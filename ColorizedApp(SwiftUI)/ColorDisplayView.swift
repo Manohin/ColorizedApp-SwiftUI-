@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct ColorRectangleView: View {
+struct ColorDisplayView: View {
     @Binding var redColorValue: Double
     @Binding var greenColorValue: Double
     @Binding var blueColorValue: Double

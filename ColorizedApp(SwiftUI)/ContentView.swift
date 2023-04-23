@@ -18,7 +18,7 @@ struct ContentView: View {
             Color(.blue).opacity(0.4)
                 .ignoresSafeArea()
             VStack {
-                ColorRectangleView(
+                ColorDisplayView(
                     redColorValue: $redSliderValue,
                     greenColorValue: $greenSliderValue,
                     blueColorValue: $blueSliderValue
