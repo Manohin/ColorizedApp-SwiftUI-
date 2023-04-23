@@ -18,16 +18,20 @@ struct ColorRectangleView: View {
                 .frame (height: 150)
                 .overlay(RoundedRectangle(cornerRadius: 20)
                     .stroke(lineWidth: 3)
-                    .foregroundColor(Color(
-                        red: redColorValue / 50,
-                        green: greenColorValue / 50,
-                        blue: blueColorValue / 50)
-                    ))
+                    .foregroundColor(
+                        Color(
+                            red: redColorValue / 50,
+                            green: greenColorValue / 50,
+                            blue: blueColorValue / 50
+                        )
+                    )
+                )
                 .padding()
                 .shadow(color: Color(
                     red: redColorValue / 200,
                     green: greenColorValue / 200,
-                    blue: blueColorValue / 200), radius: 5
+                    blue: blueColorValue / 200),
+                        radius: 5
                 )
                 .foregroundColor(
                     Color(
