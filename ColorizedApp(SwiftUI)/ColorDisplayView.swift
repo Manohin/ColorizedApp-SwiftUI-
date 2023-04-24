@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ColorDisplayView: View {
-    @Binding var redColorValue: Double
-    @Binding var greenColorValue: Double
-    @Binding var blueColorValue: Double
+    var redColorValue: Double
+    var greenColorValue: Double
+    var blueColorValue: Double
     
     var body: some View {
         HStack {
@@ -20,9 +20,9 @@ struct ColorDisplayView: View {
                     .stroke(lineWidth: 3)
                     .foregroundColor(
                         Color(
-                            red: redColorValue / 50,
-                            green: greenColorValue / 50,
-                            blue: blueColorValue / 50
+                            red: redColorValue / 255,
+                            green: greenColorValue / 255,
+                            blue: blueColorValue / 255
                         )
                     )
                 )
