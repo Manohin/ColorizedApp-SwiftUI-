@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct ColorDisplayView: View {
-    var redColorValue: Double
-    var greenColorValue: Double
-    var blueColorValue: Double
+    let redColorValue: Double
+    let greenColorValue: Double
+    let blueColorValue: Double
     
     var body: some View {
         HStack {
